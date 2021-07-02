@@ -19,7 +19,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/js/script.js">
+   
+
     <title>Work Day Scheduler</title>
   </head>
 
@@ -31,10 +32,16 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <h1 class="dayToday">Today is:</h1>
-
+      <h1 id="dayToday">Today is:</h1>
+      <form action="/action_page.php">
+        <label for="fname">Plans:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Plans:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+  
+      </form>
     </div>
-
+    <script src="assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
